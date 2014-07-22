@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TimeMeister</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edit_name">タイマーのなまえ</string>
+    <string name="edit_time">じかん</string>
+    <string name="edit_music">おんがく</string>
+    <string name="edit_icon">アイコン</string>
+    <string name="edit_hour">時間</string>
+    <string name="edit_minute">分</string>
+    <string name="edit_second">秒</string>
+    <string name="edit_change">変更</string>
+    <string name="stop_mes">おわったよん</string>
+
+</resources>

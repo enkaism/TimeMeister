@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_main">
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/imageIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:contentDescription="@string/edit_icon"
+                    android:src="@drawable/button_main_egg"
+                    android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+
+            <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageIcon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/edit_name"
+                    android:textSize="24sp"
+                    android:background="#333333"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <requestFocus />
+            </TextView>
+
+            <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+            <TextView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:background="#333333"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:text="@string/edit_icon"/>
+
+            <Spinner
+                    android:id="@+id/spinnerIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/icons_array"/>
+
+            <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerIcon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:background="#333333"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:text="@string/edit_time"/>
+            <EditText
+                    android:id="@+id/editTimeH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:ems="2"
+                    android:maxLength="2"
+                    android:inputType="number"/>
+
+            <TextView
+                    android:id="@+id/timeH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/editTimeH"
+                    android:text="@string/edit_hour"/>
+
+            <EditText
+                    android:id="@+id/editTimeM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_toRightOf="@+id/timeH"
+                    android:ems="2"
+                    android:maxLength="2"
+                    android:inputType="number"/>
+
+            <TextView
+                    android:id="@+id/timeM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/editTimeM"
+                    android:text="@string/edit_minute"/>
+
+            <EditText
+                    android:id="@+id/editTimeS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_toRightOf="@+id/timeM"
+                    android:ems="2"
+                    android:maxLength="2"
+                    android:inputType="number"/>
+
+            <TextView
+                    android:id="@+id/timeS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/editTimeS"
+                    android:text="@string/edit_second"/>
+
+
+        <Button
+                android:id="@+id/btEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_edit_changed"
+                android:textSize="36sp"
+                android:layout_below="@+id/timeS" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

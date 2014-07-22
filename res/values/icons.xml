@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="icons_array">
+		<item>自転車</item>
+		<item>本</item>
+		<item>車</item>
+		<item>ゆで卵</item>
+		<item>火</item>
+		<item>フライパン</item>
+		<item>音楽</item>
+		<item>カップラーメン</item>
+		<item>鍋</item>
+		<item>パスタ</item>
+		<item>パソコン</item>
+		<item>米</item>
+		<item>仮眠</item>
+		<item>勉強</item>
+		<item>休憩</item>
+		<item>電車</item>
+		<item>テレビ</item>
+		<item>傘</item>
+		<item>ウォーキング</item>
+	</array>
+</resources>
